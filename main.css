@@ -23,6 +23,33 @@ top:0;
 z-index: 20;
 
 }
+.wrapper .header .cover-small-icon{
+  width:200px;
+  height:100%;
+  text-align: center;
+ 
+  display:none;
+  font-size: 36px;
+}
+.wrapper .header #small-nav-wrapper{
+  width:300px;
+  height:270px;
+  position:absolute;
+  left:70px;
+  top:45px;
+  display: none;
+  text-align: center;
+  list-style: none;
+  box-shadow: 0 0 10px #333;
+  background-color: #fff;
+}
+.wrapper .header #small-nav-wrapper .small-li{
+  padding:10px 10px;
+}
+.wrapper .header #small-nav-wrapper .small-li a{
+  text-decoration: none;font-size: 23px;
+  color:black;
+}
 .wrapper .header .left{
 width: 50%;
 height:100%;
@@ -188,7 +215,11 @@ box-shadow: 0 0 20px #333 ;
 .wrapper .content .my-projects-wrap .my-projects-text{
 text-align: center;
 height:10%;
+position: relative;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrapper .content .my-projects-wrap .my-projects-text h1{
+  position: relative;
 }
 .wrapper .content .my-projects-wrap .project-item-wrap{
     display: grid;
@@ -205,6 +236,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   overflow: hidden;
+  position: relative;
  
 }
 .wrapper .content .my-projects-wrap .project-item-wrap .project-item .produce-text{
@@ -238,6 +270,25 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     position: relative;
 
 }
+.wrapper .content .my-skills .small-skillbar{
+  width:100%;
+  height:80%;
+  text-align: center;
+  display:none;
+  padding-top:50px;
+  position: relative;
+
+}
+.wrapper .content .my-skills .small-skillbar img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.wrapper .content .my-skills .small-skillbar .position-skillbar{
+  display:flex;flex-direction: row;
+  text-align: center;position: absolute;
+  top:60%;font-size: 27px;
+}
 .wrapper .content .my-skills .skill-text{
     text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -246,6 +297,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
   
 .wrapper .content .my-skills .skill-wrapper {
+  display: flex;
     position: absolute;
     top: 60%;
     left: 55%;
@@ -333,7 +385,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "85%";
+    content: "15%";
     font-size: 22px;
     font-weight: 800;
     color:rgb(6, 116, 241);
@@ -622,7 +674,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "83%";
+    content: "13%";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -935,7 +987,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "66%";
+    content: "16%";
     font-size: 22px;
     font-weight: 800;
     color:  rgb(6, 116, 241);
@@ -1150,7 +1202,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "60%";
+    content: "20%";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -1420,7 +1472,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "78%";
+    content: "7,8%";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -2044,7 +2096,7 @@ to{
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
+	background:linear-gradient(to top, rgb(245, 40, 166),rgb(196, 78, 243));
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -2251,8 +2303,16 @@ background-color: rgb(233, 227, 227);
     padding-top: 190px;
 position: relative;
 padding-left: 20px;
+flex-direction: row;
 }
-
+.wrapper .content .video-next .facebook-comment{
+  width:100%;
+  height:400px;
+  overflow-y: scroll;
+  display: none;
+  margin-top: 60px;
+ 
+}
 
   
   
@@ -2346,13 +2406,138 @@ position: relative;top:120px;
 font-size: 20px;
   }
 
+  .wrapper .content .about-me .me-cover .about-me-image .me-image{
+    padding-top:15px !important;
+  }
+
 @media(min-width: 1200px) {
-  
+  .wrapper{
+    width:1400px;
+  }
 }
 @media(max-width: 800px){
     
   
 }
 @media(max-width:500px) {
+  .wrapper{
+    height:7000px;
+  }
+  .wrapper .header{
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131__340.jpg);
+  }
+  .wrapper .header .right{
+    display:none;
+  }
+   .wrapper .header .cover-small-icon{
+    display:block;
+
+   }
+   .wrapper .content{
+     height:99%;
+   }
+   .wrapper .content .first-div .first-div-content{
+     padding-top: 200px;
+   }
+   .wrapper .content .first-div .first-div-content p{
+     left:60px;font-weight: bolder;
+    
+   }
+   .wrapper .content .me{
+     display: flex;flex-direction: column;background-color: rgb(240, 231, 231);
+   }
+   .wrapper .content .me .avata{
+     width:100%;
+   }
+   .wrapper .content .me .show-name{
+     width:100%;
+     padding-top: 20px ;
+   }
+   .wrapper .content .my-projects-wrap{
+     height:2000px;
+     padding: 0;
+   }
+   .wrapper .content .my-projects-wrap .my-projects-text{
+     height:8%;
+   }
+   .wrapper .content .my-projects-wrap .my-projects-text h1{
+   top:90px;
+  }
+   .wrapper .content .my-projects-wrap .project-item-wrap{
+     display: flex;flex-direction: column;
+     background-color: rgb(227, 231, 233);
+     height:90%;
+   }
+   .wrapper .content .my-projects-wrap .project-item-wrap .project-item,
+   .wrapper .content .my-projects-wrap .project-item-wrap .project-item img
+   {
+     height:100%;width:100%;
+   }
+   .wrapper .content .my-projects-wrap .project-item-wrap .project-item .produce-text{
+     left:130px;top:90px;font-size: 26px;
+   }
+   .wrapper .content .my-skills{
+     display: flex;flex-direction: column;
+     height:600px;
+   }
+   .wrapper .content .my-skills .skill-wrapper{
+    display: none;
+   }
+   .wrapper .content .my-skills .small-skillbar{
+     display:block;
+   }
+   .wrapper .content .about-me{
+     height:1200px;
+   }
+   .wrapper .content .about-me .me-cover{
+     display: flex; flex-direction: column;
+   }
+   .wrapper .content .about-me .me-cover .about-me-image{
+     width:100%;
+   }
+   .wrapper .content .about-me .me-cover .about-me-right{
+     height:100%;
+   }
+   .wrapper .content .contact-wrapper{
+     display: flex; flex-direction: column;
+     height:1300px;
+   }
+   .wrapper .content .contact-wrapper #contact{
+     width:80%;left:10px;
+   }
+   .wrapper .content .contact-wrapper .map-wrap{
+     width:95%;top:30px;left:10px;
+     height:90%;
+   }
+   .wrapper .content .name-animation  .layer:after{
+     font-size: 66px;text-align: justify;
+   }
+   .wrapper .content .video-next{
+     display: flex; flex-direction: column;
+     padding-left: 0px ;
+     height:684px;
+   }
+   .wrapper .content .video-next iframe{
+     width:100%;
+   }
    
+
+   .wrapper .content .video-next .running_man{
+     display:none;
+   }
+   .wrapper .content .video-next .facebook-comment{
+     display:block;
+   }
+   .wrapper .main-footer{
+     height:1%;
+   }
+   .wrapper .main-footer .copywrite{
+     top:0px;
+   }
+   .wrapper .content .about-me-fake .images-fake{
+     width:100%;
+   }
+   .wrapper .content .about-me-fake .content-fake-wrap h1{
+     font-size: 19px;
+   }
 }

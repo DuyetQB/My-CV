@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded" ,function(){
+    let icon = document.querySelector(".cover-small-icon");
+    let nav = document.querySelector("#small-nav-wrapper");
+    current ="click1";
+    icon.onclick= function(){
+        if(current =="click1"){
+            this.style.color ="blue";
+            nav.style.display ="block";
+            current ="click2"
+        }
+        else if( current == "click2"){
+            this.style.color ="black";
+            nav.style.display ="none";
+            current ="click1"
+        }
+    }
+},false)
+
+
 
 window.setTimeout(function () {
     $(".skill-progress").addClass("go");
@@ -5,7 +24,7 @@ window.setTimeout(function () {
 
 
 
-const hieu_ung_danh_chu = function(the_html_chua_chu, chu, thoiGianDoi) {
+const time_to_write = function(the_html_chua_chu, chu, thoiGianDoi) {
     this.the_html_chua_chu = the_html_chua_chu;
     this.chu = chu;
     this.tu = '';
@@ -21,10 +40,10 @@ document.addEventListener('DOMContentLoaded', chay_ham);
      const the_html_chua_chu = document.querySelector('.danh_chu');
      const chu = JSON.parse(the_html_chua_chu.getAttribute('data-chu'));
      const thoiGianDoi = the_html_chua_chu.getAttribute('data-thoiGianDoi');
-         new hieu_ung_danh_chu(the_html_chua_chu, chu, thoiGianDoi);
+         new time_to_write(the_html_chua_chu, chu, thoiGianDoi);
  }
 
- hieu_ung_danh_chu.prototype.ham_danh_chu = function() {
+ time_to_write.prototype.ham_danh_chu = function() {
     const index_chu_hien_tai = this.vi_tri_index_chu % this.chu.length;
     const chu_hien_tai = this.chu[index_chu_hien_tai];
     if(this.dang_xoa_chu) {
