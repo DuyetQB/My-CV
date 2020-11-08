@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded" ,function(){
     current ="click1";
     icon.onclick= function(){
         if(current =="click1"){
-            this.style.color ="blue";
+            this.style.color ="orange";
             nav.style.display ="block";
            
             current ="click2"
         }
         else if( current == "click2"){
-            this.style.color ="black";
+            this.style.color ="rgb(15, 216, 166)";
             nav.style.display ="none";
             current ="click1"
         }
