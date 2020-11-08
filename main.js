@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded" ,function(){
         if(current =="click1"){
             this.style.color ="blue";
             nav.style.display ="block";
+           
             current ="click2"
         }
         else if( current == "click2"){
