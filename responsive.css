@@ -31,10 +31,11 @@
      .wrapper .content .me .show-name{
        width:100%;
        padding-top: 20px ;
+       background:rgb(235, 230, 230);
      }
      .wrapper .content .my-projects-wrap{
        height:2000px;
-       padding: 0;
+       padding: 0;background:rgb(235, 230, 230);
      }
      .wrapper .content .my-projects-wrap .my-projects-text{
        height:8%;
@@ -44,7 +45,7 @@
     }
      .wrapper .content .my-projects-wrap .project-item-wrap{
        display: flex;flex-direction: column;
-       background-color: rgb(227, 231, 233);
+      
        height:90%;
      }
      .wrapper .content .my-projects-wrap .project-item-wrap .project-item,
