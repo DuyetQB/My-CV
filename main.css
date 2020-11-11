@@ -148,7 +148,7 @@ font-size: 23px;}
 .wrapper .content .first-div .first-div-content p{
     position: relative;left:120px;top:10px;
 }
-.wrapper .content .first-div .first-div-content p::before{
+/* .wrapper .content .first-div .first-div-content p::before{
     content:"";
     position: absolute;
     width:14px;
@@ -156,7 +156,7 @@ font-size: 23px;}
     background-color: #fff;
     top:10px;
    left:590px;
-}
+} */
 
 .wrapper .content .me{
     width:100%;
@@ -1780,7 +1780,7 @@ font-family:'roboto';
  }
  .wrapper .content .about-me .me-cover .about-me-right{
      width:70%;
-     height:70%;
+     height:100%;
    
      padding: 40px;
  }
@@ -1883,7 +1883,7 @@ to{
 }
 
 .wrapper .content .about-me-fake .wrapper-fake {
-  overflow: hidden;
+  overflow: hidden;position: relative;
 }
 
 .wrapper .content .about-me-fake .absolute-wrapper {
@@ -1933,12 +1933,12 @@ to{
 
 .wrapper .content .about-me-fake .content-fake-wrap h1 {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 3rem;position: relative;
 }
 
 .wrapper .content .about-me-fake .content-fake-wrap p {
   margin-bottom: 1.5rem;
-  font-family: open sans;
+  font-family: open sans;position: relative;
 }
 
 .wrapper .content .about-me-fake .content-fake-wrap button {
@@ -1947,7 +1947,7 @@ to{
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 1rem 2.5rem;
-  cursor: pointer;
+  cursor: pointer;position: relative;
 }
 
 .wrapper .content .about-me-fake .content-fake-wrap button:active {
@@ -1992,7 +1992,9 @@ to{
   background: url("https://kenh14cdn.com/thumb_w/660/2020/5/28/8-1590654102199458081935.jpg")
     no-repeat 50% 50% / cover;
 }
-
+.wrapper .content .about-me-fake .navigation{
+  position: relative;
+}
 .wrapper .content .about-me-fake .navigation .navigation-right,
 .wrapper .content .about-me-fake .navigation .navigation-left {
   height: 60px;
@@ -2053,7 +2055,7 @@ to{
 .wrapper .content .contact-wrapper #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 .wrapper .content .contact-wrapper #contact {
-	background: linear-gradient(to right, rgb(190, 26, 177) ,rgb(93, 142, 240) );
+	background: linear-gradient(to right,#d57eeb,rgb(93, 142, 240) );
 	padding:25px;
     margin:30px 0;
     width:30%;

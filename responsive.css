@@ -76,7 +76,7 @@
        width:100%;
      }
      .wrapper .content .about-me .me-cover .about-me-right{
-       height:100%;
+       height:100%;width:90%;
      }
      .wrapper .content .about-me .me-cover .about-me-right .about-right-ul{
        font-size: 20px;
@@ -133,13 +133,58 @@
   }
   @media only screen and (min-width: 740px) and (max-width: 1023px){
     .wrapper{
-      height:5000px;
+      height:4870px;
     }
     .wrapper .header .left{
       width:30%;
     }
     .wrapper .header .right{
       width:70%;
+    }
+    .wrapper .content{
+      height:87%;}
+    .wrapper .content .me .avata::after{
+      right:30px;
+    }
+    .wrapper .content .first-div .first-div-content p::before{
+      left:300px;
+    }
+    .wrapper .content .about-me .me-cover .about-me-image{
+      width:40%;
+    }
+    .wrapper .content .about-me .me-cover .about-me-image .me-image{
+      object-fit: cover;width:100%;
+    }
+    .wrapper .content .about-me .me-cover .about-me-right{
+      padding: 15px ;
+    }
+    .wrapper .content .about-me .me-cover .about-me-right .about-right-ul{
+      font-size: 19px;
+      list-style-position: inside;
+    }
+    .wrapper .content .about-me-fake .content-fake-wrap h1{
+  bottom: 18rem ;font-size: 1.7rem;
+    }
+    .wrapper .content .about-me-fake .content-fake-wrap p{
+    bottom: 17rem;
+    }
+    .wrapper .content .about-me-fake .content-fake-wrap button{
+      bottom:16rem;
+      user-select: none;
+     
+    }
+    
+    
+    .wrapper .content .about-me-fake .wrapper-fake{
+      bottom:15rem;
+    }
+    .wrapper .content .about-me-fake .navigation 
+{
+  
+  bottom: 13rem ;
+}
+    .wrapper .content .about-me-fake main{
+      padding: 0px ;
     }
     .wrapper .content .my-projects-wrap .project-item-wrap{
         display: grid; grid-template-columns: auto auto;
@@ -152,7 +197,7 @@
     }
     .wrapper .content .video-next .running_man{
       left:300px;
-      width:40%;
+      width:30%;
     }
     .wrapper .content .video-next .running_man .textarea span:nth-child(1){
       transform: translateX(80px);
@@ -171,38 +216,24 @@
     -o-transform:translateX(22px) ;
   }
   .wrapper .content .video-next .running_man .textarea span:nth-child(3){
-   font-size: 50px;
-   z-index:3;
-   transform:translateX(-226px) ;
-   transform:translateY(101px) ;
-   -webkit-transform:translateY(101px) ;
-   -moz-transform:translateY(101px) ;
-   -ms-transform:translateY(101px) ;
-   -o-transform:translateY(101px) ;
+   
+    display: none;
+  
   }
     .wrapper .content .video-next .running_man .textarea span:nth-child(4){
      font-size: 50px;
      z-index:3;
      transform:translateX(110px) ;
-     transform: translateY(70px );
-     -webkit-transform: translateY(70px );
-     -moz-transform: translateY(70px );
-     -ms-transform: translateY(70px );
-     -o-transform: translateY(70px );
+    
+    
   }
-      .wrapper .content .video-next .running_man .textarea span:nth-child(5){
-        font-size: 70px;
-        z-index:3;
-        transform:translateX(240px) ;
-        -webkit-transform:translateX(240px) ;
-        -moz-transform:translateX(240px) ;
-        -ms-transform:translateX(240px) ;
-        -o-transform:translateX(240px) ;
-        transform: translateY(70px );
-  }
+     
   .wrapper .content .video-next .running_man .man{
     width:470px;
     height:300px;
+  }
+  .wrapper .main-footer{
+    height:100px ;
   }
   }
   

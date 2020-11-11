@@ -26,7 +26,7 @@ function love(){
         //main Animation
         function runmanLoad () {
           var num = 1;
-          var speed = 80;
+          var speed = 150;
           var maxImgCount = 8;
           var $content = $('.running_man');
           var $man = $('.man');
