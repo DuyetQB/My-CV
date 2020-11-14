@@ -1,11 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif&display=swap');
  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap");
 *{
     margin: 0;padding: 0;-webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   
 }
 body,html{
     scroll-behavior: smooth;
+  
 }
 .wrapper{
 width:100%;
@@ -96,28 +98,11 @@ color:rgb(15, 216, 166);
      background-color: #fff;
      display: none;
     
-   
 }
-@keyframes grow{
-to{
-    width:50px;
- 
-}
-}
-    .wrapper .header .right .main-ul .main-li:hover::before{
-      content:"";
-      position: absolute;
-      height:1px;
-      transition: all 13s ease-in infinite ;
-      display: block;
-      background-color: #fff;
-      -webkit-transition: all 13s ease-in infinite ;
-      -moz-transition: all 13s ease-in infinite ;
-      -ms-transition: all 13s ease-in infinite ;
-      -o-transition: all 13s ease-in infinite ;
-      animation: grow 0.6s  linear;
-      -webkit-animation: grow 0.6s  linear;
-}
+
+
+  
+
     .wrapper .header .right .main-ul .main-li a:hover{
         color:rgb(16, 223, 16);
     }
@@ -125,7 +110,7 @@ to{
 
     .wrapper .content{
         width:100%;
-        background-color: rgb(228, 226, 226);
+        background-color: rgb(255, 255, 255);
         height:96%;
     }
 .wrapper .content .first-div{
@@ -146,7 +131,7 @@ font-size: 23px;}
 }
 
 .wrapper .content .first-div .first-div-content p{
-    position: relative;left:120px;top:10px;
+    position: relative;left:120px;top:10px;font-family: 'Indie Flower', cursive;
 }
 /* .wrapper .content .first-div .first-div-content p::before{
     content:"";
@@ -161,7 +146,7 @@ font-size: 23px;}
 .wrapper .content .me{
     width:100%;
     height:300px;
-    background-color: rgb(252, 249, 249);
+   
     display: flex;
     flex-direction: row;
 
@@ -227,16 +212,17 @@ box-shadow: 0 0 20px #333 ;
 
 .wrapper .content .my-projects-wrap{
   width:100%;
-  height:1000px;background-color: rgb(243, 242, 242);
+  
   box-sizing: border-box;
  padding: 10px ;
+ 
 }
 
 .wrapper .content .my-projects-wrap .my-projects-text{
 text-align: center;
 height:10%;
 position: relative;
-font-family:'roboto';
+font-family: 'Noto Serif', serif;
 }
 .wrapper .content .my-projects-wrap .my-projects-text h1{
   position: relative;
@@ -286,9 +272,9 @@ font-family:'roboto';
 .wrapper .content .my-skills{
     width:100%;
     height:300px;
-    background-color: rgb(233, 227, 227);
+   
     position: relative;
-
+    
 }
 .wrapper .content .my-skills .small-skillbar{
   width:100%;
@@ -311,7 +297,7 @@ font-family:'roboto';
 }
 .wrapper .content .my-skills .skill-text{
     text-align: center;
-  font-family: 'roboto';
+    font-family: 'Noto Serif', serif;
 }
 
 
@@ -405,7 +391,7 @@ font-family:'roboto';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "15%";
+    content: "HTML";
     font-size: 22px;
     font-weight: 800;
     color:rgb(6, 116, 241);
@@ -694,7 +680,7 @@ font-family:'roboto';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "13%";
+    content: "CSS";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -1007,7 +993,7 @@ font-family:'roboto';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "16%";
+    content: "Jquery";
     font-size: 22px;
     font-weight: 800;
     color:  rgb(6, 116, 241);
@@ -1222,7 +1208,7 @@ font-family:'roboto';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "20%";
+    content: "Javascript";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -1492,7 +1478,7 @@ font-family:'roboto';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "7,8%";
+    content: "English";
     font-size: 22px;
     font-weight: 800;
     color: rgb(6, 116, 241);
@@ -1750,7 +1736,8 @@ font-family:'roboto';
  .wrapper .content .about-me{
      width:100%;
      height:700px;
-     background-color: rgb(233, 227, 227);
+   
+     font-family: 'Noto Serif', serif;
     
  }
 
@@ -1782,10 +1769,10 @@ font-family:'roboto';
      width:70%;
      height:100%;
    
-     padding: 40px;
+     padding: 10px;
  }
  .wrapper .content .about-me .me-cover .about-me-right .about-right-ul{
-     font-size: 24px;
+     font-size: 24px;list-style-position: inside;
  }
  .wrapper .content .about-me .me-cover .about-me-right .about-right-ul .about-right-li{
      padding: 10px 10px ;
@@ -1799,7 +1786,7 @@ font-family:'roboto';
   position: fixed;
   top:0;
   left:0;
-  background-color: rgb(244, 246, 244);
+  background-color: rgb(255, 255, 255);
   display:none;
   z-index: 100;
   text-align: center;
@@ -2048,7 +2035,7 @@ to{
 .wrapper .content .contact-wrapper{
     width:100%;
     height:580px;
-    background-color: rgb(219, 212, 212);
+    background-color: rgb(238, 235, 235);
     position: relative;
     display: flex;flex-direction: row;
 }
@@ -2173,7 +2160,7 @@ to{
     width:100%;
     height:200px;
 position: relative;
-background-color: rgb(233, 227, 227);
+
 }
 .wrapper .content .name-animation .stage {
   height: 100%;
@@ -2323,7 +2310,7 @@ background-color: rgb(233, 227, 227);
 .wrapper .content .video-next{
     width:100%;
     height:500px;
-    background-color: rgb(235, 230, 230);
+   
    display: flex;
     padding-top: 190px;
 position: relative;
@@ -2341,84 +2328,20 @@ flex-direction: row;
 
   
   
-.wrapper .content .video-next #preload {
-    display: none;
+
+  
+  
+  .wrapper .content .video-next .girl-sitdown {
+   width:50%;
+   height:70%;text-align: center;
+  
+   
+  }
+  .wrapper .content .video-next .girl-sitdown img{
+    width:70%;height:100%;
+    object-fit: cover;
   }
   
-  .wrapper .content .video-next .running_man {
-    width: 570px;
-    height: 270px;
-    position: absolute;
-    left: 600px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  .wrapper .content .video-next .running_man .man {
-    z-index: 10;
-    top: -130px;
-    left: -600px;
-    position: absolute;
-    width: 640px;
-    height: 480px;
-    background-size: cover;
-  }
-  .wrapper .content .video-next .running_man .textarea span {
-    font-size: 24px;
-    display: block;
-    color: #1d1f20;
-    opacity: 0;
-    font-family: 'Luckiest Guy', cursive;
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(1) {
-    margin-left: 7px;
-    transform: translateX(-100px);
-    transition: all 400ms 400ms;
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(2) {
-    z-index: 12;
-    font-size: 160px;
-    color: #1d1f20;
-    transform: translateX(-100px);
-    transition: all 400ms 600ms;
-    position: relative;
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(3) {
-    z-index: 9;
-    position: absolute;
-    display: block;
-    font-size: 120px;
-    margin: -135px 0 0 300px;
-    transform: translateX(-100px);
-    transition: all 400ms 700ms;
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(4) {
-    color: #3aef3a;
-    margin-top: -45px;
-    font-size: 80px;
-    transform: translateX(-150px);
-    transition: all 400ms 800ms;
-    -webkit-transform: translateX(-150px);
-    -moz-transform: translateX(-150px);
-    -ms-transform: translateX(-150px);
-    -o-transform: translateX(-150px);
-}
-  .wrapper .content .video-next .running_man .textarea span:nth-child(5) {
-    color: #ef3a55;
-    margin-top: -45px;
-    font-size: 130px;
-    transform: translateX(-200px);
-    transition: all 400ms 800ms;
-    -webkit-transform: translateX(-200px);
-    -moz-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    -o-transform: translateX(-200px);
-}
-  .wrapper .content .video-next .running_man.active .textarea span {
-    transform: translateX(0px);
-    opacity: 0.95;
-  }
   .wrapper .main-footer{
       width:100%;
       height:4%;

@@ -23,7 +23,7 @@
       
      }
      .wrapper .content .me{
-       display: flex;flex-direction: column;background-color: rgb(240, 231, 231);
+       display: flex;flex-direction: column;
      }
      .wrapper .content .me .avata{
        width:100%;
@@ -31,11 +31,11 @@
      .wrapper .content .me .show-name{
        width:100%;
        padding-top: 20px ;
-       background:rgb(235, 230, 230);
+     
      }
      .wrapper .content .my-projects-wrap{
        height:2000px;
-       padding: 0;background:rgb(235, 230, 230);
+       padding: 0;
      }
      .wrapper .content .my-projects-wrap .my-projects-text{
        height:8%;
@@ -100,14 +100,15 @@
        padding-left: 0px ;
        height:684px;
      }
+     .wrapper .content .video-next .girl-sitdown{
+       width:100%;
+     }
      .wrapper .content .video-next iframe{
        width:100%;
      }
      
   
-     .wrapper .content .video-next .running_man{
-       display:none;
-     }
+    
      .wrapper .content .video-next .facebook-comment{
        display:block;
      }
@@ -195,43 +196,11 @@
     .wrapper .content .video-next iframe{
       width:50%;
     }
-    .wrapper .content .video-next .running_man{
+    .wrapper .content .video-next .{
       left:300px;
       width:30%;
     }
-    .wrapper .content .video-next .running_man .textarea span:nth-child(1){
-      transform: translateX(80px);
-      -webkit-transform: translateX(80px);
-      -moz-transform: translateX(80px);
-      -ms-transform: translateX(80px);
-      -o-transform: translateX(80px);
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(2){
-    font-size: 50px;
-    z-index:3;
-    transform:translateX(22px) ;
-    -webkit-transform:translateX(22px) ;
-    -moz-transform:translateX(22px) ;
-    -ms-transform:translateX(22px) ;
-    -o-transform:translateX(22px) ;
-  }
-  .wrapper .content .video-next .running_man .textarea span:nth-child(3){
-   
-    display: none;
-  
-  }
-    .wrapper .content .video-next .running_man .textarea span:nth-child(4){
-     font-size: 50px;
-     z-index:3;
-     transform:translateX(110px) ;
     
-    
-  }
-     
-  .wrapper .content .video-next .running_man .man{
-    width:470px;
-    height:300px;
-  }
   .wrapper .main-footer{
     height:100px ;
   }
