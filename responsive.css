@@ -101,7 +101,7 @@
        height:684px;
      }
      .wrapper .content .video-next .girl-sitdown{
-       width:100%;
+       display: none;
      }
      .wrapper .content .video-next iframe{
        width:100%;
