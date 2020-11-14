@@ -247,8 +247,8 @@ font-family: 'Noto Serif', serif;
 }
 .wrapper .content .my-projects-wrap .project-item-wrap .project-item .produce-text{
     position: absolute;
-    color: rgb(6, 116, 241);
-    font-weight: bold;
+    color: rgb(23, 7, 248);
+    font-weight: bolder;
 }
 .wrapper .content .my-projects-wrap .project-item-wrap .project-item .produce-image{
     height:80%;width:90%;

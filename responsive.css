@@ -89,7 +89,7 @@
        width:80%;left:10px;
      }
      .wrapper .content .contact-wrapper .map-wrap{
-       width:95%;top:30px;left:10px;
+       width:95%;top:0px;left:10px;
        height:90%;
      }
      .wrapper .content .name-animation  .layer:after{
@@ -134,7 +134,7 @@
   }
   @media only screen and (min-width: 740px) and (max-width: 1023px){
     .wrapper{
-      height:4870px;
+      height:5370px;
     }
     .wrapper .header .left{
       width:30%;
@@ -143,7 +143,7 @@
       width:70%;
     }
     .wrapper .content{
-      height:87%;}
+      height:95%;}
     .wrapper .content .me .avata::after{
       right:30px;
     }
@@ -196,13 +196,13 @@
     .wrapper .content .video-next iframe{
       width:50%;
     }
-    .wrapper .content .video-next .{
-      left:300px;
-      width:30%;
-    }
+   
     
   .wrapper .main-footer{
-    height:100px ;
+    height:5% ;
+  }
+  .wrapper .main-footer .copywrite{
+    top:0px;
   }
   }
   
