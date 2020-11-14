@@ -2345,11 +2345,11 @@ flex-direction: row;
   .wrapper .main-footer{
       width:100%;
       height:4%;
-      background-color: rgb(231, 227, 227);
+      background-color: rgb(255, 254, 254);
   }
   .wrapper .main-footer .copywrite{
       height:40px;
-background-color: rgb(233, 230, 230);
+
 position: relative;top:120px;
 font-size: 20px;
   }
